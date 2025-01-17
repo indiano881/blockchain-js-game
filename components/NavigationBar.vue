@@ -1,10 +1,8 @@
 <template>
     <div class="container cyan brackets">
-  <a>HOME</a>
-  <a>ARTICLES</a>
-  <a>PORTFOLIO</a>
-  <a>ABOUT</a>
-  <a>CONTACT</a>
+  <NuxtLink to="/">HOME</NuxtLink>
+  <NuxtLink to="/quiz" >Quiz</NuxtLink>
+  
 </div>
 </template>
 <style scoped>
