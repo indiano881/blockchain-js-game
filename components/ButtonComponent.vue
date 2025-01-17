@@ -1,3 +1,5 @@
 <template>
-    <button>METAMASK </button>
+  <div>
+    <button>METAMASK</button>
+  </div>
 </template>

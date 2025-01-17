@@ -9,21 +9,21 @@
 </template>
 <script setup lang="ts">
 useHead({
-  title: 'Mastermind 3.0',
+  title: 'JS quiz',
   meta: [{ name: 'description', content: 'Nuxtermind' }],
   bodyAttrs: {
     class: 'test',
   },
-  script: [{ innerHTML: "console.log('Welcome to Nuxtermind!!!')" }],
+  script: [{ innerHTML: "console.log('Welcome to JS quiz!!!')" }],
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/icon.svg' }],
 })
 useSeoMeta({
-  title: 'Nuxtermind',
-  ogTitle: 'Nuxtermind',
+  title: 'JS quiz',
+  ogTitle: 'JS quiz',
   description:
-    'Nuxtermind is modern version of the mastermind/secret code game with a touch of some modern features. Players will be allowed to choose a character and release powers during the gameplay. A timer will be alwys set and online torunament mode will be availble so that it is possible to play online in real time.',
+    'JS quiz is modern version of the mastermind/secret code game with a touch of some modern features. Players will be allowed to choose a character and release powers during the gameplay. A timer will be alwys set and online torunament mode will be availble so that it is possible to play online in real time.',
   ogDescription:
-    'Nuxtermind is modern version of the mastermind/secret code game with a touch of some modern features. Players will be allowed to choose a character and release powers during the gameplay. A timer will be alwys set and online torunament mode will be availble so that it is possible to play online in real time.',
+    'JS quiz is modern version of the mastermind/secret code game with a touch of some modern features. Players will be allowed to choose a character and release powers during the gameplay. A timer will be alwys set and online torunament mode will be availble so that it is possible to play online in real time.',
   ogImage: '/public/icon.svg',
   twitterCard: 'summary_large_image',
 })
