@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-500 min-h-36">
+  <div class="bg-red-100 min-h-36">
     <p class="text-3xl text-black">HOMEPAGE</p>
     
   <MetamaskProvider>
@@ -16,16 +16,17 @@
 <div v-if="$metamask.states.installed">
   
   <h3>Metamask is already installed</h3>
-  <p>Network Chain ID: {{ $metamask.states.chainId }}</p>
+  <p class="bg-white border-lg border-2 border-black max-w-[150px] m-4">Network Chain ID: {{ $metamask.states.chainId }}</p>
 
 
   <!-- show if connected -->
-  <p v-if="$metamask.states.connected">
+  <p v-if="$metamask.states.connected" class="bg-white border-lg border-2 border-black max-w-[450px] m-4">
     Wallet: {{ $metamask.states.address }}
   </p>
 
   <!-- click to connect your wallet -->
   <button
+  class="bg-green-400 border-xl border-2 border-black max-w-[200px] m-4 p-2"
     :disabled="$metamask.states.connected"
     @click="$metamask.connect()"
   >
@@ -46,4 +47,5 @@
 export default {
   name: 'IndexPage',
 }
+
 </script>
