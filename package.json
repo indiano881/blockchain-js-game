@@ -11,7 +11,9 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "ethers": "^6.13.5",
     "nuxt": "^3.15.2",
+    "nuxt-metamask": "^3.0.1",
     "vue": "latest",
     "vue-router": "latest"
   },

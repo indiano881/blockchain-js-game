@@ -12,4 +12,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  plugins: ['~/plugins/wallet'],
+  modules: [
+    // Simple usage
+    'nuxt-metamask'
+  ]
 })
