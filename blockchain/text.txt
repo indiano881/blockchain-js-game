@@ -1,0 +1,14 @@
+user with logi in metamask 
+
+press start quiz
+at start quiz pays with some tokens
+if quiz passed tokens sent back
+if failed tokens lost
+BOTH case=> scored must be registered on the blockchain: maybe as key value pair "account": "result"
+
+somewhere every wallet can claim some tokens to paly the quiz. They can calim 1 time every 72 hours?
+
+for every transacrtion there is a fee
+
+
+
