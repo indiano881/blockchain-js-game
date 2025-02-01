@@ -6,9 +6,36 @@ if quiz passed tokens sent back
 if failed tokens lost
 BOTH case=> scored must be registered on the blockchain: maybe as key value pair "account": "result"
 
-somewhere every wallet can claim some tokens to paly the quiz. They can calim 1 time every 72 hours?
+somewhere every wallet can claim some tokens to paly the quiz. They can calim 1 time every 24 hours?
 
 for every transacrtion there is a fee
 
+Contract freetokens public{
+    const user(adress)
+    const last request
+    if (user.last request >= 24 h) {
+        send free token
+    } else {
+        message= "sorry but you have to wait 24 hours from your last request"
+    }
 
+}
+
+Contract playedQuiz public payable{
+    account must send some token to MAIN GAME WALLET
+    
+    WHEN QUIZ FINISHED SEND result
+    if result is higher register new result??? OR REGISTER ALWAYS RESULT???
+    if result >= 70% send extra tokens (or NFT like a badge? back)
+
+}
+
+blockchain/
+
+contracts/: Your Solidity smart contracts (e.g., Quiz.sol).
+migrations/ or deploy/: Script files for deploying contracts (Truffle uses migrations, Hardhat might use deploy).
+scripts/: Scripts for tasks like verifying contracts on Etherscan, running special batch functions, etc.
+test/: Contains your contract test files. Could be JavaScript tests (for Truffle/Hardhat) or Solidity tests.
+hardhat.config.js or truffle-config.js: Configuration files for your chosen framework.
+package.json: Blockchain-specific dependencies (Hardhat, Truffle, ethers.js, web3.js, etc.)
 

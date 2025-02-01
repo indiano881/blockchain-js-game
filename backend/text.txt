@@ -1,0 +1,9 @@
+backend/
+
+This is optional if you only rely on the blockchain for your backend logic. However, many dApps or web3 apps still have a server for tasks like user authentication, aggregator APIs, or storing game/quiz data that doesn’t make sense on-chain.
+server.js (or index.js): Your Node.js entry point.
+routes/: Group your API routes by feature (e.g., /auth, /quiz, etc.).
+controllers/: Business logic for each route.
+models/: If you’re using an off-chain DB (MongoDB, PostgreSQL, etc.) for user data, high scores, or quiz definitions.
+utils/: Helper libraries (logging, error handling, etc.).
+package.json: Backend Node.js dependencies.
