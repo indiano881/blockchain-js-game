@@ -4,6 +4,7 @@
 
     <MetamaskProvider>
       <div>
+        <SpiderC />
         <!-- show if not installed -->
         <div v-if="!$metamask.states.installed">
           <h3>Metamask is not installed</h3>
@@ -47,13 +48,75 @@
         <img src="/spider.svg" alt="" class="h-28 w-28 absolute bottom-1 left-80" />
       </div>
       
-    </div>
+      <div class="max-w-sm mx-auto">
+  <div class="relative aspect-square">
+    <!-- Body image -->
+    <img 
+      src="/body.svg" 
+      alt="body" 
+      class="absolute inset-0 w-full h-full object-contain z-10"
+    >
+    
+    <!-- Top Right Leg -->
+<img 
+  src="/rightHand.svg" 
+  alt="leg"
+  class="absolute object-contain leg-top-right"
+  style="
+    top: 49%;
+    left: 14%;
+    width: 20%;
+  "
+/>
+
+<!-- Top Left Leg -->
+<img 
+  src="/leftLeg.svg" 
+  alt="leg"
+  class="absolute object-contain leg-top-left"
+  style="
+    top: 69%;
+    left: 17%;
+    width: 20%;
+  "
+/>
+
+<!-- Bottom Right Leg -->
+<img 
+  src="/leg.svg" 
+  alt="leg"
+  class="absolute object-contain leg-bottom-right"
+  style="
+    top: 80%;
+    left: 80%;
+    width: 20%;
+  "
+/>
+
+<!-- Bottom Left Leg -->
+<img 
+  src="/leftLeg.svg" 
+  alt="leg"
+  class="absolute object-contain leg-bottom-left"
+  style="
+    top: 80%;
+    left: 20%;
+    width: 20%;
+  "
+/>
+   
+   
   </div>
+  </div>
+</div>
+</div>
+
 </template>
 <script>
 export default {
   name: 'IndexPage',
 }
+
 </script>
 <style scoped>
 .element.bubble {
@@ -72,4 +135,59 @@ export default {
   padding-top: 6%;
   padding-bottom: 18%;
 }
+/* Each keyframe includes both the translate and rotation so the legs move around the same pivot point. */
+
+@keyframes wiggleTopRight {
+  0%, 100% {
+    transform: translate(-40%, -56%) rotate(148deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(140deg);
+  }
+}
+
+@keyframes wiggleTopLeft {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(70deg);
+  }
+  /*50% {
+    transform: translate(-50%, -50%) rotate(60deg);
+  }*/
+}
+
+@keyframes wiggleBottomRight {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(-40deg);
+  }
+  /*50% {
+    transform: translate(-50%, -50%) rotate(-30deg);
+  }*/
+}
+
+@keyframes wiggleBottomLeft {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(40deg);
+  }
+  /*50% {
+    transform: translate(-50%, -50%) rotate(30deg);
+  }*/
+}
+
+/* Now apply the animations: duration, easing, infinite iteration, etc. */
+.leg-top-right {
+  animation: wiggleTopRight 2s ease-in-out infinite;
+}
+
+.leg-top-left {
+  animation: wiggleTopLeft 1.5s ease-in-out infinite;
+}
+
+.leg-bottom-right {
+  animation: wiggleBottomRight 5s ease-in-out infinite;
+}
+
+.leg-bottom-left {
+  animation: wiggleBottomLeft 5s ease-in-out infinite;
+}
+
 </style>
