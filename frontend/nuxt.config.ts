@@ -15,6 +15,6 @@ export default defineNuxtConfig({
   plugins: ['~/plugins/wallet'],
   modules: [
     // Simple usage
-    'nuxt-metamask'
-  ]
+    'nuxt-metamask',
+  ],
 })

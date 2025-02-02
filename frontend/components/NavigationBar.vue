@@ -1,7 +1,11 @@
 <template>
-  <div class="container cyan brackets">
-    <NuxtLink to="/">HOME</NuxtLink>
-    <NuxtLink to="/quiz">Quiz</NuxtLink>
+  <div class="bg-[#E39C33]">
+    <div
+      class="container bg-[#E39C33] brackets flex w-full items-center justify-evenly"
+    >
+      <NuxtLink to="/">HOME</NuxtLink>
+      <NuxtLink to="/quiz">QUIZ</NuxtLink>
+    </div>
   </div>
 </template>
 <style scoped>
@@ -19,9 +23,7 @@ div.container a {
   z-index: 0;
   cursor: pointer;
 }
-.cyan {
-  background: #00bcd4;
-}
+
 /* Brackets go out */
 div.brackets a:before,
 div.brackets a:after {
