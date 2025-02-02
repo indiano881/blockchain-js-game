@@ -36,8 +36,18 @@
         </div>
       </div>
     </MetamaskProvider>
-
-    <h1></h1>
+    <div class="bg-[#1A294D]">
+      <h1 class="text-white text-4xl text-center">wELCOMe INTO WEBBY QUIZZY</h1>
+      <div class=" flex flex-col relative min-h-[400px] items-center justify-center">
+        <div class="element speech bubble absolute top-4 left-80 z-30">
+          <span class="px-4"
+            >Hi! I am Webby and I am here to challenge you!</span
+          >
+        </div>
+        <img src="/spider.svg" alt="" class="h-28 w-28 absolute bottom-1 left-80" />
+      </div>
+      
+    </div>
   </div>
 </template>
 <script>
@@ -45,3 +55,21 @@ export default {
   name: 'IndexPage',
 }
 </script>
+<style scoped>
+.element.bubble {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% 60%;
+  margin: 0 auto;
+  text-align: center;
+  height: 0;
+  box-sizing: content-box;
+  line-height: 2;
+}
+.element.speech {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+  width: 25%;
+  padding-top: 6%;
+  padding-bottom: 18%;
+}
+</style>

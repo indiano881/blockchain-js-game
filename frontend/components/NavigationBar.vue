@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-[#E39C33]">
+  <div class="bg-[#FEE2E2]">
     <div
-      class="container bg-[#E39C33] brackets flex w-full items-center justify-evenly"
+      class="container bg-[#FEE2E2] brackets flex w-full items-center justify-evenly"
     >
       <NuxtLink to="/">HOME</NuxtLink>
       <NuxtLink to="/quiz">QUIZ</NuxtLink>
@@ -14,9 +14,9 @@ div.container {
 }
 
 div.container a {
-  color: #fff;
+  color: black;
   text-decoration: none;
-  font: 20px Raleway;
+  font: 28px;
   margin: 0px 10px;
   padding: 10px 10px;
   position: relative;
