@@ -89,6 +89,7 @@
     width: 20%;
   "
 />
+
 <!-- Top Left Leg -->
 <img 
   src="/leftLeg.svg" 
@@ -167,7 +168,10 @@ export default {
     transform: translate(12%, 5%) rotate(17deg);
   }
   75% {
-    transform: translate(10%, 0%) rotate(20deg);
+    transform: translate(10%, 0%) rotate(5deg);
+  }
+  85% {
+    transform: translate(0%, 0%) rotate(0deg);
   }
   100% {
     transform: translate(0%, 0%) rotate(0deg);
@@ -182,10 +186,10 @@ export default {
     transform: translate(-25%, -30%) rotate(180deg);
   }
   50% {
-    transform: translate(-5%, -12%) rotate(190deg);
+    transform: translate(-5%, 12%) rotate(250deg);
   }
   75% {
-    transform: translate(-25%, -30%) rotate(180deg);
+    transform: translate(-5%, 12%) rotate(230deg);
   }
   100% {
     transform: translate(-5%, -12%) rotate(190deg);
@@ -193,11 +197,25 @@ export default {
 }
 
 @keyframes wiggleTopRight {
-  0%, 100% {
+ 
+  0% {
+    transform: translate(-40%, -56%) rotate(148deg);
+  }
+  25% {
     transform: translate(-40%, -56%) rotate(148deg);
   }
   50% {
-    transform: translate(-50%, -50%) rotate(140deg);
+    transform: translate(22%, -100%) rotate(189deg);
+  }
+  70% {
+    transform: translate(13%, -90%) rotate(175deg);
+  }
+  90% {
+    transform: translate(2%, -90%) rotate(170deg);
+  }
+  
+  100% {
+    transform: translate(-40%, -56%) rotate(148deg);
   }
 }
 
@@ -236,7 +254,7 @@ export default {
   animation: wiggleCap 10s ease-in-out infinite;
 }
 .leg-top-right {
-  animation: wiggleTopRight 2s ease-in-out infinite;
+  animation: wiggleTopRight 10s ease-in-out infinite;
 }
 
 .leg-top-left {
