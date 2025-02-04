@@ -50,6 +50,15 @@
       
       <div class="max-w-sm mx-auto">
   <div class="relative aspect-square">
+    <img src="/cap.svg" 
+    alt="" 
+    class="absolute inset-0 w-full h-full object-contain z-20 "
+    style="
+    top: -38%;
+    left: 16%;
+    width: 70%;
+  "
+  >
     <!-- Body image -->
     <img 
       src="/body.svg" 
