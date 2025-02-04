@@ -38,21 +38,22 @@
       </div>
     </MetamaskProvider>
     <div class="bg-[#1A294D]">
+      <!--
       <h1 class="text-white text-4xl text-center">wELCOMe INTO WEBBY QUIZZY</h1>
       <div class=" flex flex-col relative min-h-[400px] items-center justify-center">
-        <div class="element speech bubble absolute top-4 left-80 z-30">
+        <div class="element speech bubble absolute top-4 left-80 z-30 ">
           <span class="px-4"
             >Hi! I am Webby and I am here to challenge you!</span
           >
         </div>
-        <img src="/spider.svg" alt="" class="h-28 w-28 absolute bottom-1 left-80" />
-      </div>
+        <img src="/spider.svg" alt="" class="h-28 w-28 absolute bottom-1 left-80 "  />
+      </div>-->
       
       <div class="max-w-sm mx-auto">
   <div class="relative aspect-square">
     <img src="/cap.svg" 
     alt="" 
-    class="absolute inset-0 w-full h-full object-contain z-20 "
+    class="absolute inset-0 w-full h-full object-contain z-20 capMove"
     style="
     top: -38%;
     left: 16%;
@@ -66,18 +67,28 @@
       class="absolute inset-0 w-full h-full object-contain z-10"
     >
     
-    <!-- Top Right Leg -->
+    <!-- Top left Leg -->
 <img 
   src="/rightHand.svg" 
   alt="leg"
   class="absolute object-contain leg-top-right"
   style="
-    top: 49%;
+    top: 45%;
     left: 14%;
     width: 20%;
   "
 />
-
+   <!-- Top Right Leg -->
+   <img 
+  src="/handCap.svg" 
+  alt="leg"
+  class="absolute object-contain hand-cap"
+  style="
+    top: 30%;
+    left: 75%;
+    width: 20%;
+  "
+/>
 <!-- Top Left Leg -->
 <img 
   src="/leftLeg.svg" 
@@ -145,6 +156,41 @@ export default {
   padding-bottom: 18%;
 }
 /* Each keyframe includes both the translate and rotation so the legs move around the same pivot point. */
+@keyframes capMoveKey {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  25% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  50% {
+    transform: translate(12%, 5%) rotate(17deg);
+  }
+  75% {
+    transform: translate(10%, 0%) rotate(20deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+
+@keyframes wiggleCap {
+  0% {
+    transform: translate(-5%, -12%) rotate(190deg);
+  }
+  25% {
+    transform: translate(-25%, -30%) rotate(180deg);
+  }
+  50% {
+    transform: translate(-5%, -12%) rotate(190deg);
+  }
+  75% {
+    transform: translate(-25%, -30%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-5%, -12%) rotate(190deg);
+  }
+}
 
 @keyframes wiggleTopRight {
   0%, 100% {
@@ -183,6 +229,12 @@ export default {
 }
 
 /* Now apply the animations: duration, easing, infinite iteration, etc. */
+.capMove {
+  animation: capMoveKey 10s ease-in-out infinite;
+}
+.hand-cap {
+  animation: wiggleCap 10s ease-in-out infinite;
+}
 .leg-top-right {
   animation: wiggleTopRight 2s ease-in-out infinite;
 }
