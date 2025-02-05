@@ -183,13 +183,13 @@ export default {
     transform: translate(-5%, -12%) rotate(190deg);
   }
   25% {
-    transform: translate(-25%, -30%) rotate(180deg);
+    transform: translate(-20%, -30%) rotate(180deg);
   }
   50% {
-    transform: translate(-5%, 12%) rotate(250deg);
+    transform: translate(-10%, 12%) rotate(195deg);
   }
   75% {
-    transform: translate(-5%, 12%) rotate(230deg);
+    transform: translate(10%, 12%) rotate(220deg);
   }
   100% {
     transform: translate(-5%, -12%) rotate(190deg);
